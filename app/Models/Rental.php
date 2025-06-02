@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 use App\Models\Motor;
+use Illuminate\Foundation\Auth\User;
 
 class Rental extends Model
 {
