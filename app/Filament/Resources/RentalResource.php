@@ -22,9 +22,9 @@ use App\Filament\Resources\RentalResource\RelationManagers;
 class RentalResource extends Resource
 {
     protected static ?string $model = Rental::class;
-
+    protected static ?string $navigationLabel = 'Penyewaan';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?int $navigationSort = 3;
     public static function form(Form $form): Form
     {
         return $form
