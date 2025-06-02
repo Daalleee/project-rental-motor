@@ -2,16 +2,22 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\RentalResource\Pages;
-use App\Filament\Resources\RentalResource\RelationManagers;
-use App\Models\Rental;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Motor;
+use App\Models\Rental;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\BadgeColumn;
+use Filament\Forms\Components\DatePicker;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\RentalResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\RentalResource\RelationManagers;
 
 class RentalResource extends Resource
 {
@@ -21,7 +27,7 @@ class RentalResource extends Resource
 
     public static function form(Form $form): Form
     {
-       return $form
+        return $form
             ->schema([
                 Select::make('user_id')
                     ->relationship('user', 'name')
@@ -58,9 +64,9 @@ class RentalResource extends Resource
                     ->required(),
             ]);
     }
-    
 
-     public static function table(Table $table): Table
+
+    public static function table(Table $table): Table
     {
         return $table
             ->columns([
@@ -133,4 +139,3 @@ class RentalResource extends Resource
     //     return false;
     // }
 }
-
