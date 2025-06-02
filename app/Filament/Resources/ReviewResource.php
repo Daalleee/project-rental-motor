@@ -70,8 +70,8 @@ class ReviewResource extends Resource
             // 'edit' => Pages\EditReview::route('/{record}/edit'),
         ];
     }
-    public static function canCreate(): bool
-    {
-        return false;
-    }
+    // public static function canCreate(): bool
+    // {
+    //     return false;
+    // }
 }
