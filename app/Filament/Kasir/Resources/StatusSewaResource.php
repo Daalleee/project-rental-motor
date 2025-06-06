@@ -41,17 +41,6 @@ class StatusSewaResource extends Resource
                     ->circular()
                     ->height(60),
                 TextColumn::make('motor.model')->label('Motor'),
-                TextColumn::make('motor.plate_number')
-                    ->label('PLat'),
-                TextColumn::make('start_date')->label('Mulai')->date(),
-                TextColumn::make('end_date')->label('Selesai')->date(),
-                TextColumn::make('lama_sewa')
-                    ->label('Durasi')
-                    ->getStateUsing(function ($record) {
-                        $start = \Carbon\Carbon::parse($record->start_date);
-                        $end = Carbon::parse($record->end_date);
-                        return $start->diffInDays($end) + 1 . ' hari';
-                    }),
                 BadgeColumn::make('status')
                     ->label('Status')
                     ->colors([

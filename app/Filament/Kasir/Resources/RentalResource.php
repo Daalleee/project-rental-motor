@@ -42,13 +42,6 @@ class RentalResource extends Resource
             ImageColumn::make('motor.image')->label('Foto Motor')->circular()->height(60),
             TextColumn::make('motor.brand')->label('Merek')->sortable(),
             TextColumn::make('motor.model')->label('Model')->sortable(),
-            TextColumn::make('motor.plate_number')->label('Plat')->sortable(),
-            TextColumn::make('start_date')->label('Mulai')->date()->sortable(),
-            TextColumn::make('end_date')->label('Selesai')->date()->sortable(),
-            TextColumn::make('lama_sewa')->label('Durasi')->getStateUsing(function ($record) {
-                return \Carbon\Carbon::parse($record->start_date)->diffInDays(\Carbon\Carbon::parse($record->end_date)) + 1 . ' hari';
-            }),
-            TextColumn::make('total_price')->label('Total Harga')->money('IDR', true)->sortable(),
             BadgeColumn::make('status')->label('Status')->colors([
                 'primary' => 'pending',
                 'success' => 'confirmed',
@@ -97,7 +90,7 @@ class RentalResource extends Resource
                     ->label('Selesai')
                     ->action(function ($record) {
                         $record->status = 'completed';
-                        $record->motor->status = 'available'; // Kembalikan status motor
+                        $record->motor->status = 'available';
                         $record->motor->save();
                         $record->save();
                     })

@@ -55,4 +55,8 @@ class User extends Authenticatable
             default => false,
         };
     }
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
 }
