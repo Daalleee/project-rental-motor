@@ -25,8 +25,8 @@ class KasirPanelProvider extends PanelProvider
         return $panel
             ->id('kasir')
             ->path('kasir')
-            ->login() // ⬅️ Tambahkan ini
-            ->authGuard('kasir') // ⬅️ Tambahkan ini
+            ->login()
+            ->authGuard('kasir')
             ->colors([
                 'primary' => Color::Amber,
             ])

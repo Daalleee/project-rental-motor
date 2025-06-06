@@ -28,41 +28,7 @@ class RentalResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                Select::make('user_id')
-                    ->relationship('user', 'name')
-                    ->label('Penyewa')
-                    ->required(),
-
-                Select::make('motor_id')
-                    ->label('Motor')
-                    ->relationship('motor', 'model')
-                    ->required()
-                    ->reactive()
-                    ->afterStateUpdated(function (callable $set, $state) {
-                        $motor = Motor::find($state);
-                        if ($motor) {
-                            $set('total_price', $motor->harga_sewa);
-                        }
-                    }),
-
-
-
-                DatePicker::make('start_date')->label('Tanggal Mulai')->required(),
-                DatePicker::make('end_date')->label('Tanggal Selesai')->required(),
-
-                TextInput::make('total_price')->label('Total Harga')->numeric()->required(),
-
-                Select::make('status')
-                    ->label('Status')
-                    ->options([
-                        'pending' => 'Menunggu',
-                        'confirmed' => 'Dibayar',
-                        'completed' => 'Selesai',
-                        'cancelled' => 'Dibatalkan',
-                    ])
-                    ->required(),
-            ]);
+            ->schema([]);
     }
 
 
@@ -74,24 +40,6 @@ class RentalResource extends Resource
                 TextColumn::make('motor.brand')->label('Merk'),
                 TextColumn::make('motor.model')
                     ->label('Model'),
-                TextColumn::make('motor.plate_number')
-                    ->label('PLat'),
-                TextColumn::make('start_date')
-                    ->label('Tanggal Mulai')
-                    ->date(),
-                TextColumn::make('end_date')
-                    ->label('Tanggal Selesai')
-                    ->date(),
-                TextColumn::make('lama_sewa')
-                    ->label('Durasi')
-                    ->getStateUsing(function ($record) {
-                        $start = \Carbon\Carbon::parse($record->start_date);
-                        $end = \Carbon\Carbon::parse($record->end_date);
-                        return $start->diffInDays($end) + 1 . ' hari';
-                    }),
-                TextColumn::make('total_price')
-                    ->label('Total Harga')
-                    ->money('IDR'),
                 BadgeColumn::make('status')
                     ->label('Status')
                     ->colors([
@@ -134,8 +82,8 @@ class RentalResource extends Resource
             'edit' => Pages\EditRental::route('/{record}/edit'),
         ];
     }
-    // public static function canCreate(): bool
-    // {
-    //     return false;
-    // }
+    public static function canCreate(): bool
+    {
+        return false;
+    }
 }
