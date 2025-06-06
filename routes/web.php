@@ -11,7 +11,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::post('/sewa/{motor}', [SewaController::class, 'store'])->name('sewa.store');
 
 Route::middleware(['auth'])->group(function () {
