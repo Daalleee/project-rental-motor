@@ -73,9 +73,12 @@ class UserResource extends Resource
             ])
             ->filters([])
             ->actions([
-                Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\ViewAction::make()
+                    ->label(false),
+                Tables\Actions\EditAction::make()
+                    ->label(false),
+                Tables\Actions\DeleteAction::make()
+                    ->label(false),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
