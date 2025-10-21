@@ -13,7 +13,6 @@ Kelola Daftar Motor
 
 Tambah, edit, dan hapus unit motor
 
-Laporan 
 
 Lihat seluruh transaksi dan status pembayaran
 
