@@ -49,7 +49,7 @@
                             'dengan harga Rp ' .
                             number_format($motor->rental_price_per_day, 0, ',', '.') .
                             '/hari selama (ISI BERAPA HARI) hari. Mohon informasinya lebih lanjut. Terima kasih.';
-                        $whatsappLink = 'https://wa.me/6281337063361?text=' . urlencode($message);
+                        $whatsappLink = 'https://wa.me/?text=' . urlencode($message);
                     @endphp
 
                     {{-- Form untuk simpan sewa --}}
