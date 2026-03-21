@@ -9,21 +9,21 @@
 
 **Sistem Manajemen Rental Motor dengan Multi-User Role**
 
-[Fitur Utama](#-fitur-utama) • [Teknologi](#-teknologi) • [Role User](#-role-user) • [Instalasi](#-instalasi) • [Screenshots](#-screenshots)
+[Fitur Utama](#fitur-utama) • [Teknologi](#teknologi) • [Role User](#role-user) • [Instalasi](#instalasi) • [Screenshots](#screenshots)
 
 </div>
 
 ---
 
-## 📖 Tentang Aplikasi
+## Tentang Aplikasi
 
 Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dibangun menggunakan **Laravel 12** dan **Filament Admin Panel**. Sistem ini mendukung **multi-user role** (Admin, Kasir, dan User) untuk memudahkan pengelolaan bisnis rental motor.
 
 ---
 
-## 📸 Screenshots Interface
+## Screenshots Interface
 
-### 🔐 Authentication
+### Authentication
 
 **Login Page**
 
@@ -37,7 +37,7 @@ Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dib
 
 ---
 
-### 👤 User Dashboard
+### User Dashboard
 
 **Daftar Motor**
 
@@ -45,7 +45,7 @@ Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dib
 
 ---
 
-### 🎯 Admin Panel
+### Admin Panel
 
 **Kelola Pengguna**
 
@@ -65,7 +65,7 @@ Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dib
 
 ---
 
-### 💼 Kasir Panel
+### Kasir Panel
 
 **Daftar Sewa**
 
@@ -79,7 +79,7 @@ Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dib
 
 ---
 
-## 🔗 URL Login per Role
+## URL Login per Role
 
 | Role | URL Login | Deskripsi |
 |------|-----------|-----------|
@@ -100,41 +100,41 @@ http://localhost:8000/admin/login
 http://localhost:8000/kasir/login
 ```
 
-> ⚠️ **Catatan:** Setiap role hanya bisa mengakses panel sesuai dengan hak aksesnya.
+> **Catatan:** Setiap role hanya bisa mengakses panel sesuai dengan hak aksesnya.
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-### 🎯 Admin Dashboard
-
-| Fitur | Deskripsi |
-|-------|-----------|
-| 👥 **Kelola Pengguna** | Tambah, edit, hapus user (Admin, Kasir, User) |
-| 🏍 **Kelola Motor** | Manajemen unit motor dengan foto, harga, dan status |
-| 📋 **Manajemen Transaksi** | Monitor semua penyewaan dan status pembayaran |
-| ⭐ **Kelola Ulasan** | Pantau ulasan dan rating dari pelanggan |
-
-### 💼 Kasir Dashboard
+### Admin Dashboard
 
 | Fitur | Deskripsi |
 |-------|-----------|
-| ✅ **Konfirmasi Pembayaran** | Setujui pembayaran dan ubah status transaksi |
-| 📊 **Lihat Status Sewa** | Monitor penyewaan aktif dan riwayat |
-| 🔄 **Aksi Cepat** | Konfirmasi, Selesaikan, atau Batalkan transaksi |
+| **Kelola Pengguna** | Tambah, edit, hapus user (Admin, Kasir, User) |
+| **Kelola Motor** | Manajemen unit motor dengan foto, harga, dan status |
+| **Manajemen Transaksi** | Monitor semua penyewaan dan status pembayaran |
+| **Kelola Ulasan** | Pantau ulasan dan rating dari pelanggan |
 
-### 👤 User Dashboard
+### Kasir Dashboard
 
 | Fitur | Deskripsi |
 |-------|-----------|
-| 🔍 **Lihat Daftar Motor** | Jelajahi motor tersedia dengan foto dan harga |
-| 📝 **Buat Pesanan Sewa** | Pilih tanggal dan durasi sewa |
-| 📋 **Riwayat Sewa** | Monitor status penyewaan pribadi |
-| ⭐ **Berikan Ulasan** | Tulis review setelah penyewaan selesai |
+| **Konfirmasi Pembayaran** | Setujui pembayaran dan ubah status transaksi |
+| **Lihat Status Sewa** | Monitor penyewaan aktif dan riwayat |
+| **Aksi Cepat** | Konfirmasi, Selesaikan, atau Batalkan transaksi |
+
+### User Dashboard
+
+| Fitur | Deskripsi |
+|-------|-----------|
+| **Lihat Daftar Motor** | Jelajahi motor tersedia dengan foto dan harga |
+| **Buat Pesanan Sewa** | Pilih tanggal dan durasi sewa |
+| **Riwayat Sewa** | Monitor status penyewaan pribadi |
+| **Berikan Ulasan** | Tulis review setelah penyewaan selesai |
 
 ---
 
-## 🛠 Teknologi
+## Teknologi
 
 | Kategori | Teknologi |
 |----------|-----------|
@@ -165,7 +165,7 @@ http://localhost:8000/kasir/login
 
 ---
 
-## 👥 Role User
+## Role User
 
 | Role | Akses | Deskripsi |
 |------|-------|-----------|
@@ -188,7 +188,7 @@ public function canAccessPanel(Panel $panel): bool
 
 ---
 
-## 🚀 Instalasi
+## Instalasi
 
 ### Prasyarat
 - PHP >= 8.2
@@ -259,7 +259,7 @@ Aplikasi berjalan di `http://127.0.0.1:8000`
 
 ---
 
-## 🔐 Default Login
+## Default Login
 
 | Role | Email | Password |
 |------|-------|----------|
@@ -267,7 +267,7 @@ Aplikasi berjalan di `http://127.0.0.1:8000`
 | Kasir | kasir@example.com | password |
 | User | user@example.com | password |
 
-> ⚠️ **PENTING:** Ubah password default setelah instalasi!
+> **PENTING:** Ubah password default setelah instalasi!
 
 ---
 
@@ -275,6 +275,6 @@ Aplikasi berjalan di `http://127.0.0.1:8000`
 
 **Aplikasi Rental Motor Berbasis Web**
 
-Dibuat dengan ❤️ menggunakan Laravel & Filament
+Dibuat menggunakan Laravel & Filament
 
 </div>
