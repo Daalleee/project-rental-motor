@@ -21,6 +21,89 @@ Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dib
 
 ---
 
+## 📸 Screenshots Interface
+
+### 🔐 Authentication
+
+**Login Page**
+
+![Login](public/screenshots/auth-login.png)
+
+---
+
+**Register Page**
+
+![Register](public/screenshots/auth-register.png)
+
+---
+
+### 👤 User Dashboard
+
+**Daftar Motor**
+
+![User Dashboard](public/screenshots/user-dashboard-motors.png)
+
+---
+
+### 🎯 Admin Panel
+
+**Kelola Pengguna**
+
+![Kelola Pengguna](public/screenshots/kelola_pengguna_admin.png)
+
+---
+
+**Kelola Motor**
+
+![Kelola Motor](public/screenshots/admin-motor-management.png)
+
+---
+
+**Penyewaan**
+
+![Rentals](public/screenshots/admin-rentals.png)
+
+---
+
+### 💼 Kasir Panel
+
+**Daftar Sewa**
+
+![Kasir Dashboard](public/screenshots/kasir-daftar-sewa.png)
+
+---
+
+**Status Sewa**
+
+![Status Sewa](public/screenshots/kasir-status-sewa.png)
+
+---
+
+## 🔗 URL Login per Role
+
+| Role | URL Login | Deskripsi |
+|------|-----------|-----------|
+| **Pelanggan / User** | `/login` | Login untuk user biasa (pelanggan) |
+| **Admin** | `/admin/login` | Login untuk admin panel |
+| **Kasir** | `/kasir/login` | Login untuk kasir panel |
+
+### Contoh Akses:
+
+```
+# Login Pelanggan/User
+http://localhost:8000/login
+
+# Login Admin
+http://localhost:8000/admin/login
+
+# Login Kasir
+http://localhost:8000/kasir/login
+```
+
+> ⚠️ **Catatan:** Setiap role hanya bisa mengakses panel sesuai dengan hak aksesnya.
+
+---
+
 ## ✨ Fitur Utama
 
 ### 🎯 Admin Dashboard
@@ -173,64 +256,6 @@ php artisan serve
 ```
 
 Aplikasi berjalan di `http://127.0.0.1:8000`
-
----
-
-## 📸 Screenshots
-
-### 🔐 Authentication
-
-**Login Page**
-
-![Login](public/screenshots/auth-login.png)
-
----
-
-**Register Page**
-
-![Register](public/screenshots/auth-register.png)
-
----
-
-### 👤 User Dashboard
-
-**Daftar Motor**
-
-![User Dashboard](public/screenshots/user-dashboard-motors.png)
-
----
-
-### 🎯 Admin Panel
-
-**Kelola Pengguna**
-
-![Kelola Pengguna](public/screenshots/kelola_pengguna_admin.png)
-
----
-
-**Kelola Motor**
-
-![Kelola Motor](public/screenshots/admin-motor-management.png)
-
----
-
-**Penyewaan**
-
-![Rentals](public/screenshots/admin-rentals.png)
-
----
-
-### 💼 Kasir Panel
-
-**Daftar Sewa**
-
-![Kasir Dashboard](public/screenshots/kasir-daftar-sewa.png)
-
----
-
-**Status Sewa**
-
-![Status Sewa](public/screenshots/kasir-status-sewa.png)
 
 ---
 
