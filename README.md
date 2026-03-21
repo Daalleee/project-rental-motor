@@ -19,31 +19,6 @@
 
 Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dibangun menggunakan **Laravel 12** dan **Filament Admin Panel**. Sistem ini mendukung **multi-user role** (Admin, Kasir, dan User) untuk memudahkan pengelolaan bisnis rental motor.
 
-### 📸 Interface Aplikasi
-
-#### 👥 Admin Panel - Kelola Pengguna
-
-![Kelola Pengguna](public/screenshots/kelola_pengguna_admin.png)
-
-*Halaman manajemen pengguna dengan tabel interaktif*
-
-**Fitur yang terlihat:**
-- Tabel daftar semua user
-- Search dan filter
-- Action buttons: View, Edit, Delete
-- Badge role dengan warna berbeda (Admin=green, Kasir=yellow, User=gray)
-
----
-
-> **📸 Screenshot Lainnya akan Ditambahkan:**
-> - Login & Register
-> - User Dashboard (Daftar Motor)
-> - Riwayat Sewa
-> - Admin Dashboard
-> - Kelola Motor
-> - Penyewaan
-> - Kasir Panel (Daftar Sewa, Konfirmasi, Status Sewa)
-
 ---
 
 ## ✨ Fitur Utama
@@ -203,36 +178,59 @@ Aplikasi berjalan di `http://127.0.0.1:8000`
 
 ## 📸 Screenshots
 
-> **📍 Lokasi:** `public/screenshots/`
+### 🔐 Authentication
 
-### Cara Menambahkan Screenshot
+**Login Page**
 
-**1. Simpan file screenshot** di folder `public/screenshots/`
+![Login](public/screenshots/auth-login.png)
 
-**2. Commit ke GitHub:**
-```bash
-git add public/screenshots/
-git commit -m "Add screenshots"
-git push
-```
+---
 
-**3. Gambar akan tampil otomatis** di README GitHub
+**Register Page**
 
-### Daftar Screenshot
+![Register](public/screenshots/auth-register.png)
 
-| Halaman | File | Status |
-|---------|------|--------|
-| Login | `auth-login.png` | ⬜ |
-| Register | `auth-register.png` | ⬜ |
-| User Dashboard | `user-dashboard-motors.png` | ⬜ |
-| My Rentals | `user-my-rentals.png` | ⬜ |
-| Admin Dashboard | `admin-dashboard-overview.png` | ⬜ |
-| Kelola Pengguna | `kelola_pengguna_admin.png` | ✅ |
-| Kelola Motor | `admin-motor-management.png` | ⬜ |
-| Rentals | `admin-rentals.png` | ⬜ |
-| Kasir Dashboard | `kasir-daftar-sewa.png` | ⬜ |
-| Konfirmasi | `kasir-konfirmasi-pembayaran.png` | ⬜ |
-| Status Sewa | `kasir-status-sewa.png` | ⬜ |
+---
+
+### 👤 User Dashboard
+
+**Daftar Motor**
+
+![User Dashboard](public/screenshots/user-dashboard-motors.png)
+
+---
+
+### 🎯 Admin Panel
+
+**Kelola Pengguna**
+
+![Kelola Pengguna](public/screenshots/kelola_pengguna_admin.png)
+
+---
+
+**Kelola Motor**
+
+![Kelola Motor](public/screenshots/admin-motor-management.png)
+
+---
+
+**Penyewaan**
+
+![Rentals](public/screenshots/admin-rentals.png)
+
+---
+
+### 💼 Kasir Panel
+
+**Daftar Sewa**
+
+![Kasir Dashboard](public/screenshots/kasir-daftar-sewa.png)
+
+---
+
+**Status Sewa**
+
+![Status Sewa](public/screenshots/kasir-status-sewa.png)
 
 ---
 
