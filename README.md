@@ -21,52 +21,28 @@ Aplikasi Rental Motor adalah sistem manajemen rental motor berbasis web yang dib
 
 ### 📸 Interface Aplikasi
 
-#### 🔐 Authentication
+#### 👥 Admin Panel - Kelola Pengguna
 
-**Login Page**
-![Login](public/screenshots/auth-login.png)
-
-**Register Page**
-![Register](public/screenshots/auth-register.png)
-
----
-
-#### 👤 User Dashboard
-
-**Daftar Motor**
-![User Dashboard](public/screenshots/user-dashboard-motors.png)
-
-**Riwayat Sewa**
-![My Rentals](public/screenshots/user-my-rentals.png)
-
----
-
-#### 🎯 Admin Panel
-
-**Dashboard Admin**
-![Admin Dashboard](public/screenshots/admin-dashboard-overview.png)
-
-**Kelola Pengguna**
 ![Kelola Pengguna](public/screenshots/kelola_pengguna_admin.png)
 
-**Kelola Motor**
-![Kelola Motor](public/screenshots/admin-motor-management.png)
+*Halaman manajemen pengguna dengan tabel interaktif*
 
-**Penyewaan**
-![Rentals](public/screenshots/admin-rentals.png)
+**Fitur yang terlihat:**
+- Tabel daftar semua user
+- Search dan filter
+- Action buttons: View, Edit, Delete
+- Badge role dengan warna berbeda (Admin=green, Kasir=yellow, User=gray)
 
 ---
 
-#### 💼 Kasir Panel
-
-**Daftar Sewa**
-![Kasir Dashboard](public/screenshots/kasir-daftar-sewa.png)
-
-**Konfirmasi Pembayaran**
-![Konfirmasi](public/screenshots/kasir-konfirmasi-pembayaran.png)
-
-**Status Sewa**
-![Status Sewa](public/screenshots/kasir-status-sewa.png)
+> **📸 Screenshot Lainnya akan Ditambahkan:**
+> - Login & Register
+> - User Dashboard (Daftar Motor)
+> - Riwayat Sewa
+> - Admin Dashboard
+> - Kelola Motor
+> - Penyewaan
+> - Kasir Panel (Daftar Sewa, Konfirmasi, Status Sewa)
 
 ---
 
