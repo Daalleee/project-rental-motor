@@ -505,13 +505,20 @@ POST /logout                    → Logout user
 
 ## 📸 Screenshots
 
-> **📍 Lokasi Screenshots:** `storage/app/public/screenshots/`
+> **📍 Lokasi Screenshots:** `public/screenshots/`
 > 
-> Untuk melihat screenshots di browser, jalankan:
-> ```bash
-> php artisan storage:link
-> ```
-> Setelah itu, screenshots bisa diakses di: `http://localhost:8000/storage/screenshots/nama-file.png`
+> **✅ Untuk GitHub:**
+> 1. Simpan semua screenshots di folder `public/screenshots/`
+> 2. Commit dan push ke GitHub:
+>    ```bash
+>    git add public/screenshots/
+>    git commit -m "Add screenshots"
+>    git push
+>    ```
+> 3. Gambar akan otomatis tampil di README GitHub
+
+> **💡 Untuk Local Development:**
+> - Akses di: `http://localhost:8000/screenshots/nama-file.png`
 
 ---
 
@@ -593,8 +600,8 @@ POST /logout                    → Logout user
 ---
 
 #### 👥 Kelola Pengguna (User Management)
-```
-📸 Screenshot: /home/dalemasan/Documents/Project PHP/project-rental-motor/storage/app/public/screenshots/kelola_pengguna_admin.png
+
+![Kelola Pengguna](public/screenshots/kelola_pengguna_admin.png)
 
 *Halaman manajemen pengguna dengan tabel interaktif*
 
