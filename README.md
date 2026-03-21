@@ -505,6 +505,16 @@ POST /logout                    → Logout user
 
 ## 📸 Screenshots
 
+> **📍 Lokasi Screenshots:** `storage/app/public/screenshots/`
+> 
+> Untuk melihat screenshots di browser, jalankan:
+> ```bash
+> php artisan storage:link
+> ```
+> Setelah itu, screenshots bisa diakses di: `http://localhost:8000/storage/screenshots/nama-file.png`
+
+---
+
 > **Note:** Bagian ini berisi placeholder untuk screenshots interface aplikasi. Silakan tambahkan screenshot actual dari aplikasi Anda.
 
 ### Landing Page & Authentication
@@ -584,8 +594,8 @@ POST /logout                    → Logout user
 
 #### 👥 Kelola Pengguna (User Management)
 ```
-📸 Screenshot: resources/screenshots/admin-user-management.png
-```
+📸 Screenshot: /home/dalemasan/Documents/Project PHP/project-rental-motor/storage/app/public/screenshots/kelola_pengguna_admin.png
+
 *Halaman manajemen pengguna dengan tabel interaktif*
 
 **Fitur yang terlihat:**
